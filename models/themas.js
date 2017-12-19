@@ -9,7 +9,7 @@ var schema = new Schema({
   body: {
     type: String,
     unique: true,
-    required: true
+    //required: true
   },
   url: {
     type: String,
