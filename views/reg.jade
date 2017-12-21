@@ -1,0 +1,12 @@
+extends layout
+
+block content
+	form(method='POST', action='/reg')
+		.form-group
+			label(for='exampleInputEmail1') Username
+			input#exampleInputEmail1.form-control(type='text', name='username')
+		.form-group
+			label(for='exampleInputPassword1') Password
+			input#exampleInputPassword1.form-control(type='password', placeholder='Password', name='password')
+		.form-group
+			input(type='submit', value='Ok')
