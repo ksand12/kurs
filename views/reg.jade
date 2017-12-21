@@ -10,3 +10,7 @@ block content
 			input#exampleInputPassword1.form-control(type='password', placeholder='Password', name='password')
 		.form-group
 			input(type='submit', value='Ok')
+		if userid
+			a(href='/logout') Выход
+		else
+			a(href='/reg') Регистрация !{userid}

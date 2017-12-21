@@ -9,4 +9,8 @@ html
 			a(href='#') Новости
 			a(href='#') О компании
 			a(href='#') Услуги
+			if userid
+				a(href='/logout') Выход
+			else
+				a(href='/reg') Регистрация !{userid}
 	block content
